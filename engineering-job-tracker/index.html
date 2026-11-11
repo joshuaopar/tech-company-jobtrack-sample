@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Job Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="8" fill="#0071e3"/><path d="M9 12h16M9 17h16M9 22h10" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <div><b>Job Manager</b><small>Fabrication and mechanical works</small></div>
+    </div>
+    <nav id="nav">
+      <button data-view="dashboard">Dashboard</button>
+      <button data-view="jobs">Jobs</button>
+      <button data-view="quotes">Quotations</button>
+    </nav>
+    <div class="side-foot">
+      <p>Demo data, saved in this browser only.</p>
+      <button id="reset" class="link">Reset demo data</button>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="top">
+      <h1 id="title"></h1>
+      <div class="tools">
+        <input id="search" type="search" placeholder="Search" aria-label="Search">
+        <button id="newBtn" class="btn"></button>
+      </div>
+    </header>
+    <div id="view"></div>
+  </div>
+</div>
+<dialog id="dlg"></dialog>
+<div id="toast" role="status"></div>
+<script src="app.js"></script>
+<script src="charts.js"></script>
+</body>
+</html>
